@@ -93,3 +93,10 @@ var netTotal = 0;
 var totalChange = 0;
 var greatestIncrease = { date: "", amount: 0 };
 var greatestDecrease = { date: "", amount: 0 };
+
+
+// Loop through the records
+for (var i = 0; i < finances.length; i++) {
+    var record = finances[i];
+    var date = record[0];
+    var amount = record[1];
