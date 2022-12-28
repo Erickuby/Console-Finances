@@ -87,6 +87,7 @@ var finances = [
 ['Feb-2017', 671099]
 ];
 
+
 // Initialize variables to store results
 var totalMonths = 0;
 var netTotal = 0;
@@ -120,3 +121,22 @@ for (var i = 0; i < finances.length; i++) {
     }
   }
 }
+
+// Calculate average change
+var averageChange = totalChange / (totalMonths - 1);
+
+// Output results
+console.log("Total months: " + totalMonths);
+console.log("Net total: " + netTotal);
+console.log("Average change: " + averageChange);
+console.log("Greatest increase: " + greatestIncrease.date + " (" + greatestIncrease.amount + ")");
+console.log("Greatest decrease: " + greatestDecrease.date + " (" + greatestDecrease.amount + ")");
+
+
+//OUTCOME RESULT
+
+Total Months: 86
+Total: $38382578
+Average change: $-2315.12
+Greatest increase: Feb-2012 ($1926159)
+Greatest decrease: Sep-2013 ($-2196167)
