@@ -100,3 +100,23 @@ for (var i = 0; i < finances.length; i++) {
     var record = finances[i];
     var date = record[0];
     var amount = record[1];
+
+    // Update total months and net total
+  totalMonths++;
+  netTotal += amount;
+
+  // Update total change and greatest increase/decrease
+  if (i > 0) {
+    var prevRecord = finances[i - 1];
+    var prevAmount = prevRecord[1];
+    var change = amount - prevAmount;
+    totalChange += change;
+    if (change > greatestIncrease.amount) {
+      greatestIncrease.date = date;
+      greatestIncrease.amount = change;
+    } else if (change < greatestDecrease.amount) {
+      greatestDecrease.date = date;
+      greatestDecrease.amount = change;
+    }
+  }
+}
