@@ -133,10 +133,3 @@ console.log("Greatest increase: " + greatestIncrease.date + " (" + greatestIncre
 console.log("Greatest decrease: " + greatestDecrease.date + " (" + greatestDecrease.amount + ")");
 
 
-//OUTCOME RESULT
-
-Total Months: 86
-Total: $38382578
-Average change: $-2315.12
-Greatest increase: Feb-2012 ($1926159)
-Greatest decrease: Sep-2013 ($-2196167)
